@@ -1,11 +1,13 @@
 import './App.css';
-import Reqres from './component/reqres';
+import Navbabr from './components/Navbar';
+import UserList from './components/UserList';
+
 
 function App() {
   return (
     <div>
-   <h1>ola mundo</h1>
-   <Reqres/>
+   <Navbabr/>
+   <UserList/>
    </div>
   );
 }
