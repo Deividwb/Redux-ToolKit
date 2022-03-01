@@ -1,14 +1,14 @@
-import './App.css';
-import Navbabr from './components/Navbar';
-import UserList from './components/UserList';
-
+import Navbabr from "./components/Navbar";
+import UserList from "./components/UserList";
+import { Provider } from "react-redux";
+import store from './store';
 
 function App() {
   return (
-    <div>
-   <Navbabr/>
-   <UserList/>
-   </div>
+    <Provider store ={store}>
+      <Navbabr />
+      <UserList />
+    </Provider>
   );
 }
 
